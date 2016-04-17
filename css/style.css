@@ -49,6 +49,10 @@ header ul li a {
 	text-decoration: none;
 	color: #6c6c6c;
 }
+ul li a:hover {
+	border-bottom: 5px solid #5094f2; 
+	padding-bottom: 11px; 
+   }
 footer {
 	background: #c8c6c6;
 }
@@ -68,7 +72,7 @@ footer p {
 }
 .wrapper_slider {
 	max-width: 1250px;
-	background: url(../img/fon_iphone.png);
+	background: url(../img/fon_iphone.png) no-repeat;
 }
 .slider {
 	margin: 0 auto;
@@ -103,11 +107,21 @@ footer p {
 }
 .slide-caption {
     width: 50%;
-    height: 220px;
     float: right;
     margin-top: 150px;
     padding-left: 100px;
     box-sizing: border-box;
+}
+.slide-caption h2 {
+	font-size: 42px;
+	color: #ffffff;
+}
+.slide-caption p {
+	font-size: 26px;
+	color: #ffffff;
+}
+.slide-caption a img {
+	margin-top: 35px;
 }
 .icons {
 	margin: 0 auto;
@@ -243,7 +257,6 @@ footer p {
 	}
 	.slide-caption {
 		width: 100%;
-		height: 80px;
 		margin: 0;
 		padding: 0;
 		text-align: center;
