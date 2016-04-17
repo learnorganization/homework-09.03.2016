@@ -49,6 +49,9 @@ header ul li a {
 	text-decoration: none;
 	color: #6c6c6c;
 }
+footer {
+	background: #c8c6c6;
+}
 footer p {
 	text-align: center;
 	font-size: 15.35px;
@@ -63,10 +66,6 @@ footer p {
 	width: 100%;
 	max-width: 1250px;
 }
-#blue_border {
-	border-bottom: solid 3px #5094f2;
-	padding-bottom: 13px;
-}
 .wrapper_slider {
 	max-width: 1250px;
 	background: url(../img/fon_iphone.png);
@@ -74,7 +73,6 @@ footer p {
 .slider {
 	margin: 0 auto;
 	width: 78.08%;
-	height: 476px;	
 }
 .slider .slide .img_iphone {
     padding: 38px 0 25px 30px;
@@ -183,17 +181,48 @@ footer p {
 	margin-left: 8px;
 	text-align: left;
 }
-
-@media only screen and (max-device-width: 480px) {
-	header h1 p {
-		font-size: 25px;
+@media only screen and (max-device-width: 930px) {
+	.cart {
+		width: 100%;
+		padding: 0;
 	}
-	header h1 img {
-		width: 20%;
+	.cart h2 {
+		text-align: center;
 	}
-
-	ul {
-		display: none;
+	.cart .img_center {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.product_text {
+		width: 100%;
+		padding: 0;
+		
+	}
+	.product_text h3, .product_text p {
+		text-align: center;
+	}
+}
+@media only screen and (max-device-width: 853px) {
+	.slider .slick-prev {
+		left: -9999px;
+	}
+	.slider .slick-next {
+		right: -9999px;
+	}
+	header ul {
+		margin: 0;
+		display: inline-block;
+	}
+	header ul li {
+		float: left;
+		text-align: center;
+		margin: 0;
+		border: 1px solid black;
+		width: 25%;
+		box-sizing: border-box;
+	}
+	nav ul li a {
+		display: block;
 	}
 	#menu-icon {
 		color: #000;
@@ -206,31 +235,52 @@ footer p {
 		display: block;
 		margin-top: 29px;
 	}
-	#nav_wrapper {
-		position: relative;
+	#nav {
+		width: 100%;
+		float: none;
+		position: inherit;
+		padding: 0;
+		background: #c0c0c0;
+	}
+	.slide-caption {
+		width: 100%;
+		height: 80px;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.slider .slide .img_iphone {
+		float: none;
+		padding-left: 0;
+		margin: 0 auto;
+	}
+	.slider .slide .img_iphone img {
+		margin: 0 auto;
+
+	}
+}
+@media only screen and (max-device-width: 480px) {
+	header h1 p {
+		font-size: 25px;
+	}
+	header h1 img {
+		width: 20%;
 	}
 	#nav {
-		clear: both;
-		position: absolute;
-		top: 38px;
-		width: 250px;
-		z-index: 10000;
-		padding: 5px;
-		background: #f8f8f8;
-		border: solid 1px #999;
-		display: none;
+		width: 100%;
+		float: none;
+		position: inherit;
+		padding: 0;
+		background: #c0c0c0;
+	}
+	nav ul li a {
+		display: block;
 	}
 	header ul li {
-	margin-right: 20px;
-}
-	.slider {
-		height: 190px;
-	}
-	.slider .slick-prev {
-	left: -9999px;
-	}
-	.slider .slick-next {
-	right: -9999px;
+	float: none;
+	text-align: center;
+	margin: 0;
+	border: 1px solid black;
 	}
 	.slider .slide .img_iphone {
 		padding: 0;
@@ -239,15 +289,11 @@ footer p {
 		box-sizing: border-box;
 	}
 	.slide-caption {
-    width: 50%;
     height: 100px;
     padding: 0;
     float: right;
     margin-top: 30px;
     box-sizing: border-box;
-	}
-	.slide-caption h2 {
-		font-size: 12px;
 	}
 	.icons {
 		margin-top: 0;
@@ -291,6 +337,7 @@ footer p {
 	.cart h2 {
 		font-size: 29px;
 		margin: 50px 0 35px 0;
+		text-align: center;
 	}
 	.product {
 		border-bottom: solid 1px #e5e5e5;
@@ -303,11 +350,13 @@ footer p {
 	.product_text h3 {
 		margin: 25px 0 25px 0;
 		font-size: 20px;
+		text-align: center;
 	}
 	.product_text p {
 		margin: 0;
 		font-size: 8px;
 		line-height: 22px;
+		text-align: center;
 	}
 	footer p {
 		width: 50%;
@@ -318,3 +367,14 @@ footer p {
 		line-height: 22px;
 	}
 }
+
+@media only screen and (max-device-width: 282px) {
+	header h1 img {
+		display: none;
+	}
+	header h1 {
+		width: 80px;
+	 }
+}
+
+
