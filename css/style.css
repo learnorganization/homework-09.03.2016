@@ -144,7 +144,6 @@ footer p {
 .pencil h3, .monitor h3, .basket h3 {
 	font-size: 20.35px;
 	color: #5094f2;
-	line-height: 44.42px;
 	margin-top: 25px;
 	margin-bottom: 9px;
 }
@@ -277,10 +276,11 @@ footer p {
 		display: block;
 	}
 	header ul li {
-	float: none;
-	text-align: center;
-	margin: 0;
-	border: 1px solid black;
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin: 0;
+		border: 1px solid black;
 	}
 	.slider .slide .img_iphone {
 		padding: 0;
@@ -289,11 +289,11 @@ footer p {
 		box-sizing: border-box;
 	}
 	.slide-caption {
-    height: 100px;
-    padding: 0;
-    float: right;
-    margin-top: 30px;
-    box-sizing: border-box;
+    	height: 100px;
+    	padding: 0;
+    	float: right;
+    	margin-top: 30px;
+    	box-sizing: border-box;
 	}
 	.icons {
 		margin-top: 0;
