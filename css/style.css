@@ -16,16 +16,6 @@ ul {
 	margin: 0;
 	padding: 0;
 }
-#blue_border {
-	border-bottom: solid 3px #5094f2;
-	padding-bottom: 13px;
-}
-.wrapper {	
-	background: #ffffff;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1250px;
-}
 header {
 	margin: 0 auto;
 	width: 78.08%;
@@ -59,6 +49,24 @@ header ul li a {
 	text-decoration: none;
 	color: #6c6c6c;
 }
+footer p {
+	text-align: center;
+	font-size: 15.35px;
+	line-height: 36px;
+	color: #909090;
+	margin-top: 33px;
+	margin-bottom: 42px;
+}
+.wrapper {	
+	background: #ffffff;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1250px;
+}
+#blue_border {
+	border-bottom: solid 3px #5094f2;
+	padding-bottom: 13px;
+}
 .wrapper_slider {
 	max-width: 1250px;
 	background: url(../img/fon_iphone.png);
@@ -68,7 +76,6 @@ header ul li a {
 	width: 78.08%;
 	height: 476px;	
 }
-
 .slider .slide .img_iphone {
     padding: 38px 0 25px 30px;
     float: left;
@@ -176,20 +183,74 @@ header ul li a {
 	margin-left: 8px;
 	text-align: left;
 }
-.copiright p {
-	text-align: center;
-	font-size: 15.35px;
-	line-height: 36px;
-	color: #909090;
-	margin-top: 33px;
-	margin-bottom: 42px;
-}
+
 @media only screen and (max-device-width: 480px) {
+	header h1 p {
+		font-size: 25px;
+	}
+	header h1 img {
+		width: 20%;
+	}
+
 	ul {
 		display: none;
 	}
+	#menu-icon {
+		color: #000;
+		width: 38px;
+		height: 29px;
+		background: url(../img/b2.png) no-repeat;
+		float: right;
+		cursor: pointer;
+		border: solid 1px #666;
+		display: block;
+		margin-top: 29px;
+	}
+	#nav_wrapper {
+		position: relative;
+	}
+	#nav {
+		clear: both;
+		position: absolute;
+		top: 38px;
+		width: 250px;
+		z-index: 10000;
+		padding: 5px;
+		background: #f8f8f8;
+		border: solid 1px #999;
+		display: none;
+	}
+	header ul li {
+	margin-right: 20px;
+}
 	.slider {
 		height: 190px;
+	}
+	.slider .slick-prev {
+	left: -9999px;
+	}
+	.slider .slick-next {
+	right: -9999px;
+	}
+	.slider .slide .img_iphone {
+		padding: 0;
+		width: 40%;
+		margin-top: 35px;
+		box-sizing: border-box;
+	}
+	.slide-caption {
+    width: 50%;
+    height: 100px;
+    padding: 0;
+    float: right;
+    margin-top: 30px;
+    box-sizing: border-box;
+	}
+	.slide-caption h2 {
+		font-size: 12px;
+	}
+	.icons {
+		margin-top: 0;
 	}
 	.icons .pencil, .icons .monitor, .icons .basket {
 		width: 100%;
@@ -208,9 +269,6 @@ header ul li a {
 		float: right;
 		width: 71%;
 		box-sizing: border-box;
-	}
-	.icons {
-		margin-top: 0;
 	}
 	.icons .text_pencil h3, .icons .text_monitor h3, .icons .text_basket h3  {
 		margin: 0;
@@ -251,36 +309,12 @@ header ul li a {
 		font-size: 8px;
 		line-height: 22px;
 	}
-	.copiright p {
+	footer p {
 		width: 50%;
 		margin: 0 auto;
 		margin-top: 20px;
 		margin-bottom: 20px;
 		font-size: 10px;
 		line-height: 22px;
-	}
-	.slider .slick-prev {
-	left: -9999px;
-	}
-	.slider .slick-next {
-	right: -9999px;
-	}
-	.slider .slide .img_iphone {
-		padding: 0;
-		width: 40%;
-		margin-top: 35px;
-		box-sizing: border-box;
-	}
-	.slide-caption {
-    width: 50%;
-    height: 100px;
-    padding: 0;
-    float: right;
-    margin-top: 30px;
-    
-    box-sizing: border-box;
-	}
-	.slide-caption h2 {
-		font-size: 12px;
 	}
 }

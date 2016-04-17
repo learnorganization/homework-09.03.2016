@@ -38,4 +38,25 @@ $('.responsive').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
+  
 });
+  
+  jQuery(document).ready(function($){
+
+   
+
+      /* Подготавливаем иконку меню */
+
+      $('#nav-wrap').prepend('<div id="menu-icon">Меню</div>');
+
+       
+
+      /* Включаем навигацию */
+
+      $("#menu-icon").on("click", function(){
+
+          $("#nav").slideToggle();
+
+          $(this).toggleClass("active");
+      });
+  });
