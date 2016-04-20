@@ -229,6 +229,7 @@ footer p {
 	}
 	header ul {
 		margin: 0;
+
 	}
 	header ul li {
 		float: left;
@@ -254,12 +255,15 @@ footer p {
 		margin-top: 29px;
 	}
 	#nav {
-		display: inline-block;
+		clear: both;
+		display: none;
 		width: 100%;
 		float: none;
 		position: inherit;
 		padding: 0;
 		background: #c0c0c0;
+		overflow: hidden;
+
 	}
 	.slide-caption {
 		width: 100%;
@@ -291,6 +295,7 @@ footer p {
 		width: 20%;
 	}
 	#nav {
+		clear: both;
 		width: 100%;
 		float: none;
 		position: inherit;
