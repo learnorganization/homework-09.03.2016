@@ -196,7 +196,7 @@ footer p {
 	margin-left: 8px;
 	text-align: left;
 }
-@media only screen and (max-device-width: 932px) {
+@media screen and (max-width: 932px) {
 	.slide-caption h4 {
 		font-size: 30px;
 	}
@@ -220,7 +220,7 @@ footer p {
 		text-align: center;
 	}
 }
-@media only screen and (max-device-width: 853px) {
+@media screen and (max-width: 853px) {
 	.slider .slick-prev {
 		left: -9999px;
 	}
@@ -283,7 +283,7 @@ footer p {
 
 	}
 }
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
 	header h1 p {
 		font-size: 25px;
 	}
@@ -393,7 +393,7 @@ footer p {
 	}
 }
 
-@media only screen and (max-device-width: 282px) {
+@media screen and (max-width: 282px) {
 	header h1 img {
 		display: none;
 	}

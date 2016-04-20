@@ -3,7 +3,6 @@ jQuery(document).ready(function(){
 		dots:false
 	});
 });	
-
 $('.responsive').slick({
   dots: true,
   infinite: false,
@@ -38,13 +37,11 @@ $('.responsive').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
-  
+}); 
+jQuery(document).ready(function($){
+    $('#nav-wrap').prepend('<div id="menu-icon">Меню</div>');
+    $("#menu-icon").on("click", function(){
+        $("#nav").slideToggle();
+        $(this).toggleClass("active");
+    });
 });
-  
-  jQuery(document).ready(function($){
-      $('#nav-wrap').prepend('<div id="menu-icon">Меню</div>');
-      $("#menu-icon").on("click", function(){
-          $("#nav").slideToggle();
-          $(this).toggleClass("active");
-      });
-  });
